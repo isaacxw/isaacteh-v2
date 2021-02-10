@@ -23,6 +23,7 @@ const StyledNav = styled.nav`
 const StyledContent = styled.main`
     display: flex;
     flex: 5 5;
+    padding-left: 0;
 `;
 
 const StyledSocials = styled.nav`

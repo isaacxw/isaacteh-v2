@@ -38,6 +38,32 @@ const StyledContentSection = styled.section`
         font-size: 1.2rem;
     }
 
+    .emailLink {
+        color: var(--green);
+        background-color: transparent;
+        border: 1px solid var(--green);
+        border-radius: var(--border-radius);
+        padding: 0.75rem 1rem;
+        font-size: var(--fz-xs);
+        font-family: var(--font-mono);
+        line-height: 1;
+        text-decoration: none;
+        cursor: pointer;
+        transition: var(--transition);
+
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: var(--green-tint);
+        }
+
+        &:after {
+            display: none !important;
+        }
+        
+        margin-top: 50px;
+    }
+
 `;
 
 const Hero = () => {

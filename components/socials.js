@@ -38,7 +38,7 @@ const Social = ({ isHome }) => {
         <>
             <StyledSocialList>
                 <StyledSocialItem>
-                    <a href="google.com">
+                    <a href="https://www.linkedin.com/in/isaactxw">
                         <i className="fa fa-linkedin"></i>
                     </a>
                 </StyledSocialItem>
