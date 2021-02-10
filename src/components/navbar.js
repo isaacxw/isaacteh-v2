@@ -15,7 +15,7 @@ const NavItems = styled.div`
         width: 3px;
         height: 200px;
         margin: 0 auto;
-        background-color: var(--light-slate);
+        background-color: var(--yellow);
     }
 
     &:after {
@@ -24,7 +24,17 @@ const NavItems = styled.div`
         width: 3px;
         height: 200px;
         margin: 0 auto;
-        background-color: var(--light-slate);
+        background-color: var(--yellow);
+    }
+
+    @media (max-width: 375px) {
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        &:before,
+        &:after {
+            display: none;
+        }
     }
 `;
 
@@ -39,7 +49,7 @@ const Navbar = ({ isHome }) => {
         <>
             <NavItems>
                 <NavItem>
-                    <Link href="/">
+                    <Link href="/about">
                         <a>
                             <i className="fa fa-user"></i>
                         </a>
@@ -47,7 +57,7 @@ const Navbar = ({ isHome }) => {
                 </NavItem>
 
                 <NavItem>
-                    <Link href="/">
+                    <Link href="/experience">
                         <a>
                             <i className="fa fa-folder-open"></i>
                         </a>

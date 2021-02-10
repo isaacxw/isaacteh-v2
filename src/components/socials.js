@@ -15,7 +15,7 @@ const StyledSocialList = styled.div`
         width: 3px;
         height: 200px;
         margin: 0 auto;
-        background-color: var(--light-slate);
+        background-color: #FFD300;
     }
 
     &:after {
@@ -24,7 +24,7 @@ const StyledSocialList = styled.div`
         width: 3px;
         height: 200px;
         margin: 0 auto;
-        background-color: var(--light-slate);
+        background-color: #FFD300;
     }
 `;
 
@@ -33,10 +33,54 @@ const StyledSocialItem = styled.div`
     color: #fff;
 `;
 
+const StyledResumeBtn = styled.div`
+    position: absolute;
+    top: 1rem;
+    right: 2.2rem;
+
+    .resumeLink {
+        color: #FFD300;
+        background-color: transparent;
+        border: 1px solid #FFD300;
+        border-radius: var(--border-radius);
+        padding: 0.75rem 1rem;
+        font-size: var(--fz-xs);
+        font-family: var(--font-mono);
+        line-height: 1;
+        text-decoration: none;
+        cursor: pointer;
+        transition: var(--transition);
+
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: var(--green-tint);
+        }
+
+        &:after {
+            display: none !important;
+        }
+    }
+
+    @media (max-width: 375px) {
+        display: relative;
+        top: 15%;
+        left: 53%;
+        margin: 0 auto;
+    }
+
+`;
+
 const Social = ({ isHome }) => {
     return (
         <>
             <StyledSocialList>
+                <StyledResumeBtn>
+                    <a href="/" className="resumeLink">
+                        Resume
+                    </a>
+                </StyledResumeBtn>
+
                 <StyledSocialItem>
                     <a href="https://www.linkedin.com/in/isaactxw">
                         <i className="fa fa-linkedin"></i>

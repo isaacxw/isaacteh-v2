@@ -11,7 +11,7 @@ const StyledContentSection = styled.section`
 
     h1 {
         margin: 0 0 30px 4px;
-        color: var(--green);
+        color: var(--yellow);
         font-family: var(--font-mono);
         font-size: clamp(var(--fz-sm), 5vw, var(--fz-md));
         font-weight: 400;
@@ -39,9 +39,9 @@ const StyledContentSection = styled.section`
     }
 
     .emailLink {
-        color: var(--green);
+        color: var(--yellow);
         background-color: transparent;
-        border: 1px solid var(--green);
+        border: 1px solid var(--yellow);
         border-radius: var(--border-radius);
         padding: 0.75rem 1rem;
         font-size: var(--fz-xs);
@@ -54,13 +54,13 @@ const StyledContentSection = styled.section`
         &:hover,
         &:focus,
         &:active {
-            background-color: var(--green-tint);
+            background-color: var(--yellow-tint);
         }
 
         &:after {
             display: none !important;
         }
-        
+
         margin-top: 50px;
     }
 

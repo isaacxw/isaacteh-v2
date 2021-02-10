@@ -12,12 +12,19 @@ const StyledContainer = styled.div`
     border: 1rem solid white;
     border-radius: 1.5rem;
     display: flex;
+
+    @media (max-width: 375px) {
+        width: 130%;
+        height: 100%;
+        flex-direction: column;
+    }
 `;
 
 const StyledNav = styled.nav`
     display: flex;
     flex: 1 1;
     margin: 0;
+
 `;
 
 const StyledContent = styled.main`
