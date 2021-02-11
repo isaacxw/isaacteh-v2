@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import styled from 'styled-components';
 
 const NavItems = styled.div`
@@ -38,6 +39,13 @@ const NavItems = styled.div`
     }
 `;
 
+const StyledLogo = styled.a`
+    position: absolute;
+    top: 0.3rem;
+    left: 0.15rem;
+    margin: 2rem;
+`;
+
 const NavItem = styled.div`
     font-family: var(--font-mono);
     font-size: 1.2rem;
@@ -48,6 +56,18 @@ const Navbar = ({ isHome }) => {
     return (
         <>
             <NavItems>
+                <StyledLogo>
+                    <Link href="/">
+                        <Image
+                            src="/logo.png"
+                            alt="logo"
+                            layout="fixed"
+                            width={65}
+                            height={65}
+                        />
+                    </Link>
+                </StyledLogo>
+
                 <NavItem>
                     <Link href="/about">
                         <a>
@@ -65,7 +85,7 @@ const Navbar = ({ isHome }) => {
                 </NavItem>
 
                 <NavItem>
-                    <Link href="/">
+                    <Link href="/contact">
                         <a>
                             <i className="fa fa-address-card"></i>
                         </a>

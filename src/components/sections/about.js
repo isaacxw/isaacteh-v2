@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 const StyledAboutSection = styled.section`
     max-width: 700px;
+    margin: auto;
 
     .inner {
         display: grid;
@@ -14,13 +15,24 @@ const StyledAboutSection = styled.section`
     }
 
     .title {
-        font-size: 4rem;
-        margin-top: -5rem;
+        font-size: 2.5rem;
         margin-bottom: 3rem;
+    }
+
+    .title:before {
+        content: '.01';
+        color: var(--yellow);
+        font-family: var(--font-mono);
+        font-size: 1.5rem;
+        margin-right: 1rem;
     }
 `;
 
-const StyledText = styled.div`
+const StyledText = styled.div`    
+    a {
+        color: var(--yellow);
+    }
+
     ul.skills-list {
         display: grid;
         grid-template-columns: repeat(2, minmax(140px, 200px));

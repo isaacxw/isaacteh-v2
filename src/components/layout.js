@@ -30,7 +30,7 @@ const StyledNav = styled.nav`
 const StyledContent = styled.main`
     display: flex;
     flex: 5 5;
-    padding-left: 0;
+    padding: 0;
 `;
 
 const StyledSocials = styled.nav`
@@ -39,13 +39,15 @@ const StyledSocials = styled.nav`
     flex: 1 1;
 `;
 
-const Layout = ({ children, location }) => {
+const Layout = ({ children, title = "Isaac Teh", location }) => {
     // const isHome = location.pathname === '/';
 
     return (
         <>
             <Head>
-
+                <title>{title}</title>
+                <meta lang="en" charSet="utf-8" />
+                <meta name="viewport" content="initial-scale=1.0" width="device-width" />
             </Head>
 
             <StyledContainer>

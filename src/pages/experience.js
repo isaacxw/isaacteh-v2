@@ -2,7 +2,7 @@ import { Layout, Experience } from '../components';
 
 const WorkExperience = () => {
     return (
-        <Layout>
+        <Layout title="Experience">
             <Experience />
         </Layout>
     )

@@ -54,7 +54,7 @@ const StyledResumeBtn = styled.div`
         &:hover,
         &:focus,
         &:active {
-            background-color: var(--green-tint);
+            background-color: var(--yellow-tint);
         }
 
         &:after {
@@ -76,7 +76,7 @@ const Social = ({ isHome }) => {
         <>
             <StyledSocialList>
                 <StyledResumeBtn>
-                    <a href="/" className="resumeLink">
+                    <a href="/resume.pdf" className="resumeLink">
                         Resume
                     </a>
                 </StyledResumeBtn>
