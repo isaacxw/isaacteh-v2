@@ -2,7 +2,7 @@ import { Layout, Contact } from '../components';
 
 const ContactPage = () => {
     return (
-        <Layout title="Contact">
+        <Layout title="Contact" location="/contact">
             <Contact />
         </Layout>
     )

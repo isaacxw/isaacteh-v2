@@ -39,7 +39,6 @@ const StyledSocials = styled.nav`
 `;
 
 const Layout = ({ children, title = "Isaac Teh", location }) => {
-    // const isHome = location.pathname === '/';
 
     return (
         <>

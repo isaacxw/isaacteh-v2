@@ -1,4 +1,12 @@
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
+
+const StyledContact = styled.div`
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+`;
 
 const StyledContactSection = styled.section`
     max-width: 600px;
@@ -66,25 +74,40 @@ const StyledContactSection = styled.section`
     }
 `;
 
+const StyledFooterSection = styled.footer`
+    text-align: center;
+    font-size: var(--fz-xs);
+    font-family: var(--font-mono);
+    line-height: 1.5rem;
+`;
+
+
 const Contact = () => {
+    const currentYear = new Date().getFullYear();
+
     return (
         <>
-            <StyledContactSection>
-                <h2 className="overline">Want to reach me?</h2>
+            <StyledContact>
+                <StyledContactSection>
+                    <h2 className="overline">Want to reach me?</h2>
 
-                <h2 className="title">Hit me up!</h2>
+                    <h2 className="title">Hit me up!</h2>
 
-                <p>
-                    I'm currently seeking full time opportunities to better develop my skills as an
-                    engineer. I'd be more than glad to discuss any opportunites. Otherwise, just say hi!
-                    I don't bite... usually.
-                </p>
+                    <p>
+                        I'm currently seeking full time opportunities to better develop my skills as an
+                        engineer. I'd be more than glad to discuss any opportunites. Otherwise, just say hi!
+                        I don't bite... usually.
+                    </p>
 
-                <a className="email-link" href="#">
-                    Say Hello
-                </a>
-            </StyledContactSection>
+                    <a className="email-link" href="#">
+                        Say Hello
+                    </a>
+                </StyledContactSection>
 
+                <StyledFooterSection>
+                    Built by Isaac Teh. <br /> {currentYear}.
+                </StyledFooterSection>
+            </StyledContact>
         </>
     )
 }
