@@ -24,7 +24,6 @@ const StyledNav = styled.nav`
     display: flex;
     flex: 1 1;
     margin: 0;
-
 `;
 
 const StyledContent = styled.main`
@@ -63,7 +62,6 @@ const Layout = ({ children, title = "Isaac Teh", location }) => {
                     <Social />
                 </StyledSocials>
             </StyledContainer>
-
         </>
     );
 }

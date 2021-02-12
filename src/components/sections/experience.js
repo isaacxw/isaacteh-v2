@@ -27,16 +27,17 @@ const StyledProjectSection = styled.div`
     }
 
     .featured {
+        width: 100%;
         height: 60%;
         padding: 2rem;
+
     }
 
     .projects {
-        height: auto;
         padding: 2rem;
-        /* border: 2px solid purple; */
 
         .other-projects {
+            justify-content: center;
             margin-bottom: 1rem;
             font-size: var(--fz-xs);
             font-family: var(--font-mono);
@@ -47,10 +48,10 @@ const StyledProjectSection = styled.div`
 
 const StyledFeaturedProject = styled.div`
     display: flex;
+    justify-content: center;
     
     .project-content {
         flex-direction: column;
-        position: relative;
         @media (max-width: 1080px) {
             
         }
@@ -83,8 +84,8 @@ const StyledFeaturedProject = styled.div`
         }
 
         .project-description {
-            position: relative;
-            width: 100%;
+            width: auto;
+            margin: 0 auto;
             z-index: 2;
             padding: 25px;
             border-radius: var(--border-radius);
@@ -143,7 +144,9 @@ const StyledFeaturedProject = styled.div`
     }
 
     .project-image {
+        max-width: 100%;
         position: relative;
+        margin-left: 2rem;
         z-index: 1;
         @media (max-width: 768px) {
 
@@ -168,6 +171,7 @@ const StyledFeaturedProject = styled.div`
 const StyledProjects = styled.div`
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap;
 
     .box {
         width: 20rem;
@@ -200,7 +204,7 @@ const StyledProjects = styled.div`
         }
 
         .description {
-            font-size: var(--fz-lg);
+            font-size: var(--fz-sm);
         }
 
         .tech-list {
@@ -223,16 +227,22 @@ const StyledProjects = styled.div`
 `;
 
 const Experience = () => {
+    const featuredProject = {
+        "name": "Spotified",
+        "description": "Spotified is a web application that allows users to visualize their listening habits. Much like Spotify recap, just more available.",
+        "stack": ["Javascript", "React", "Node.js", "Express", "Spotify Web API"]
+    };
+
     const projects = [
         {
             "name": "Ask Matty",
-            "description": "The official chat bot of CSUN",
+            "description": "Ask Matty is the official chatbot of California State University, Northridge. Developed by yours truly.",
             "stack": ["Typescript", "React", "Dialogflow"],
             "links": ["https://github.com/isaacxw/spotified", "https://spotified.herokuapp.com"]
         },
         {
-            "name": "Google",
-            "description": "The website found at Google.com",
+            "name": "WalkieTalkie",
+            "description": "The WalkieTalkie project is a CMS platform that caters towards personalized chatbot behavior.",
             "stack": ["C++", "React", "Javascript"]
         },
         {
@@ -252,23 +262,22 @@ const Experience = () => {
                     <StyledFeaturedProject>
                         <div className="project-content">
                             <p className="project-overline">Featured Project</p>
-                            <h3 className="project-title">Spotified</h3>
+                            <h3 className="project-title">{featuredProject.name}</h3>
                             <div className="project-description">
-                                Engineered a web app to let users visualize
-                                their listening habits.
+                                {featuredProject.description}
                             </div>
                             <ul className="project-tech-list">
-                                <li>React</li>
-                                <li>Javascript ES6+</li>
-                                <li>Node.js</li>
+                                {featuredProject.stack.map((tech, i) => 
+                                    <li key={i}>{tech}</li>
+                                )}
                             </ul>
-
+                            
                             <div className="project-links">
                                 <a href="#" aria-label="Github Link">
                                     <i className="fa fa-github"></i>
                                 </a>   
                                 <a href="#" aria-label="External Link">
-                                    <i className="fa fa-code"></i>
+                                    <i className="fa fa-globe"></i>
                                 </a>
                             </div>
                         </div>
@@ -279,14 +288,13 @@ const Experience = () => {
                                     src="/spotified.png"
                                     alt="spotified"
                                     layout="fixed"
-                                    width={528}
-                                    height={300}
+                                    width={550}
+                                    height={310}
                                 />
                             </a>
                         </div>
                     </StyledFeaturedProject>
                 </div>
-
 
                 <div className="projects">
                     <h2 className="other-projects">Other Projects</h2>
@@ -302,7 +310,7 @@ const Experience = () => {
                                             <i className="fa fa-github"></i>
                                         </a>
                                         <a href="#" aria-label="External Link">
-                                            <i className="fa fa-code"></i>
+                                            <i className="fa fa-globe"></i>
                                         </a>
                                     </div>
                                 </div>
