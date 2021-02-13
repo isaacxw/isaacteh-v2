@@ -166,12 +166,12 @@ const About = () => {
                 <StyledImage>
                     <div className="wrapper">
                         <Image 
-                            src="/me.jpg"
+                            src="/images/me.jpg"
                             alt="Isaac Teh"
                             className="img"
                             layout="fixed"
-                            width={300}
-                            height={300}
+                            width={280}
+                            height={280}
                         />
                     </div>
                 </StyledImage>

@@ -284,7 +284,7 @@ const Experience = () => {
                         <div className="project-image">
                             <a href="#">
                                 <Image
-                                    src="/spotified.png"
+                                    src="/images/spotified.png"
                                     alt="spotified"
                                     layout="fixed"
                                     width={550}

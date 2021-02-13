@@ -28,6 +28,7 @@ const StyledNav = styled.nav`
 
 const StyledContent = styled.main`
     display: flex;
+    justify-content: center;
     flex: 5 5;
     padding: 0;
 `;

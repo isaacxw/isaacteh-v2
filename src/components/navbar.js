@@ -59,7 +59,7 @@ const Navbar = ({ isHome }) => {
                 <StyledLogo>
                     <Link href="/">
                         <Image
-                            src="/logo.png"
+                            src="/images/logo.png"
                             alt="logo"
                             layout="fixed"
                             width={65}
