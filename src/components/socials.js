@@ -88,13 +88,13 @@ const Social = ({ isHome }) => {
                 </StyledSocialItem>
 
                 <StyledSocialItem>
-                    <a href="google.com">
+                    <a href="https://github.com/isaacxw">
                         <i className="fa fa-github"></i>
                     </a>
                 </StyledSocialItem>
 
                 <StyledSocialItem>
-                    <a href="google.com">
+                    <a href="https://twitter.com/isaac_teh">
                         <i className="fa fa-twitter"></i>
                     </a>
                 </StyledSocialItem>

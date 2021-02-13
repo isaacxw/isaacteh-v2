@@ -272,17 +272,17 @@ const Experience = () => {
                             </ul>
                             
                             <div className="project-links">
-                                <a href="#" aria-label="Github Link">
+                                <a href="https://github.com/isaacxw/Spotified" aria-label="Github Link" target="_blank">
                                     <i className="fa fa-github"></i>
                                 </a>   
-                                <a href="#" aria-label="External Link">
+                                <a href="https://spotified.herokuapp.com" aria-label="External Link" target="_blank">
                                     <i className="fa fa-globe"></i>
                                 </a>
                             </div>
                         </div>
 
                         <div className="project-image">
-                            <a href="#">
+                            <a href="https://spotified.herokuapp.com" target="_blank">
                                 <Image
                                     src="/images/spotified.png"
                                     alt="spotified"
