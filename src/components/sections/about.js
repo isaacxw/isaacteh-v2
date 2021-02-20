@@ -143,16 +143,20 @@ const About = () => {
                         <p>Hello there! I'm Isaac, a software engineer based in Los Angeles, CA.</p>
 
                         <p>
-                            I enjoy creating things that live on the internet, whether that be websites,
-                            applications, or anything in between. My goal is to always build products that provide
-                            pixel-perfect, performant experiences.
+                            I'm passionate about building things that live on the internet, whether that be websites,
+                            applications, or anything in between. I strive to build quality applications that provide
+                            pixel-perfect, performant experiences without sacrificing the most important aspect of all -- user experience.
                         </p>
 
                         <p>
-                            Shortly after graduating from{' '}
-                            <a href="https://www.csun.edu">California State University, Northridge</a>, I joined the
-                            engineering team at <a href="https://www.google.com">Google</a> where I work
-                            on a wide variety of interesting and meaningful projects on a daily basis.
+                            I recently graduated from{' '}
+                            <a href="https://www.csun.edu">California State University, Northridge</a> with a
+                            degree in Computer Science. During my time as an undergraduate, I worked as a Web Developer
+                            at the Central IT of my university building cool applications for users all across campus.
+                        </p>
+
+                        <p>
+                            Outside of writing code, I am an amatuer home chef, a music junkie, and a Formula 1 enthusiast.
                         </p>
 
                         <p>Here are a few technologies that I've been working with:</p>

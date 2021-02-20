@@ -229,7 +229,7 @@ const Experience = () => {
     const featuredProject = {
         "name": "Spotified",
         "description": "Spotified is a web application that allows users to visualize their listening habits. Much like Spotify recap, just more available.",
-        "stack": ["Javascript", "React", "Node.js", "Express", "Spotify Web API"]
+        "stack": ["React", "Node.js", "Express", "Spotify Web API"]
     };
 
     const projects = [
@@ -242,12 +242,12 @@ const Experience = () => {
         {
             "name": "WalkieTalkie",
             "description": "The WalkieTalkie project is a CMS platform that caters towards personalized chatbot behavior.",
-            "stack": ["C++", "React", "Javascript"]
+            "stack": ["Python", "React", "Typescript"]
         },
         {
-            "name": "Dropbox",
-            "description": "Co-founder of Dropbox",
-            "stack": ["Rust", "Golang", "MongoDB"]
+            "name": "isaacteh-v2",
+            "description": "My personal website, built with React, CSS-in-JS, Next.js, and deployed with Netlify",
+            "stack": ["React", "Next.js", "Netlify"]
         }
     ]
 

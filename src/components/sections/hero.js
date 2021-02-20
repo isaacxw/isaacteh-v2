@@ -80,7 +80,7 @@ const Hero = () => {
     const four = (
         <p>
             I'm a software engineer based in Los Angeles, CA specializing in building (and occasionally 
-            designing) exceptional websites, applications, and everything in between.
+            designing) websites, applications, and everything in between.
         </p>
     );
     const five = (

@@ -99,7 +99,7 @@ const Contact = () => {
                         I don't bite... usually.
                     </p>
 
-                    <a className="email-link" href="#">
+                    <a className="email-link" href="mailto:isaactxw@gmail.com">
                         Say Hello
                     </a>
                 </StyledContactSection>
