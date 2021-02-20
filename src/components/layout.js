@@ -10,7 +10,7 @@ const StyledContainer = styled.div`
     margin: 0;
     background: var(--navy);
     border: 1rem solid white;
-    border-radius: 1.5rem;
+    border-radius: 1rem;
     display: flex;
 
     @media (max-width: 375px) {

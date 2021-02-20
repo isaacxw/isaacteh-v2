@@ -246,8 +246,8 @@ const Experience = () => {
         },
         {
             "name": "isaacteh-v2",
-            "description": "My personal website, built with React, CSS-in-JS, Next.js, and deployed with Netlify",
-            "stack": ["React", "Next.js", "Netlify"]
+            "description": "My personal website, built with React, CSS-in-JS, Next.js, and deployed with Vercel",
+            "stack": ["React", "Next.js", "Vercel"]
         }
     ]
 

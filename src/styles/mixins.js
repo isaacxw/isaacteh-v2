@@ -12,14 +12,16 @@ const button = css`
     cursor: pointer;
     transition: var(--transition);
     padding: 1.25rem 1.75rem;
+
     &:hover,
     &:focus,
     &:active {
-    background-color: var(--green-tint);
-    outline: none;
+        background-color: var(--green-tint);
+        outline: none;
     }
+
     &:after {
-    display: none !important;
+        display: none !important;
     }
 `;
 
