@@ -34,14 +34,13 @@ const StyledSocialItem = styled.div`
 `;
 
 const StyledResumeBtn = styled.div`
-    display: none;
     position: absolute;
     top: 1rem;
     right: 2.2rem;
-
+    
     .resumeLink {
         color: #FFD300;
-        background-color: transparent;
+        background-color: var(--navy);
         border: 1px solid #FFD300;
         border-radius: var(--border-radius);
         padding: 0.75rem 1rem;

@@ -19,12 +19,6 @@ const StyledContainer = styled.div`
     }
 `;
 
-const StyledHeader = styled.div`
-    height: 10vh;
-    background: var(--navy);
-    z-index: 2;
-`;
-
 const StyledNav = styled.nav`
     display: flex;
     flex: 1 1;
@@ -66,9 +60,7 @@ const Layout = ({ children, title = "Isaac Teh", location }) => {
             </Head>
 
             <StyledContainer>
-                <StyledHeader>
 
-                </StyledHeader>
                 <StyledNav>
                     <Navbar />
                 </StyledNav>
