@@ -242,12 +242,14 @@ const Experience = () => {
         {
             "name": "WalkieTalkie",
             "description": "The WalkieTalkie project is a CMS platform that caters towards personalized chatbot behavior.",
-            "stack": ["Python", "React", "Typescript"]
+            "stack": ["Python", "React", "Typescript"],
+            "links": ["https://github.com/csun-it/walkietalkie"]
         },
         {
             "name": "isaacteh-v2",
             "description": "My personal website, built with React, CSS-in-JS, Next.js, and deployed with Vercel",
-            "stack": ["React", "Next.js", "Vercel"]
+            "stack": ["React", "Next.js", "Vercel"],
+            "links": ["https://github.com/isaacxw/isaacteh-v2", "#"]
         }
     ]
 
@@ -305,7 +307,7 @@ const Experience = () => {
                                         <i className="fa fa-folder"></i>
                                     </a>
                                     <div className="links">
-                                        <a href="#" aria-label="Github Link">
+                                        <a href={projects[project].links} aria-label="Github Link">
                                             <i className="fa fa-github"></i>
                                         </a>
                                         <a href="#" aria-label="External Link">

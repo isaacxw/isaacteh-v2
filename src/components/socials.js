@@ -3,28 +3,28 @@ import styled from 'styled-components';
 const StyledSocialList = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     margin: 1rem;
-    padding: 1.5rem;
+    padding: 1.5rem 1.5rem 0 1.5rem;
     list-style: none;
     line-height: 5rem;
 
-    &:before {
+    /* &:before {
         content: '';
         display: block;
         width: 3px;
         height: 200px;
         margin: 0 auto;
         background-color: #FFD300;
-    }
+    } */
 
     &:after {
         content: '';
         display: block;
-        width: 3px;
-        height: 200px;
+        width: 2px;
+        height: 30%;
         margin: 0 auto;
-        background-color: #FFD300;
+        background-color: var(--light-slate);
     }
 `;
 
@@ -34,6 +34,7 @@ const StyledSocialItem = styled.div`
 `;
 
 const StyledResumeBtn = styled.div`
+    display: none;
     position: absolute;
     top: 1rem;
     right: 2.2rem;

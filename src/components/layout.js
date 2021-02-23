@@ -10,7 +10,6 @@ const StyledContainer = styled.div`
     margin: 0;
     background: var(--navy);
     border: 1rem solid white;
-    border-radius: 1rem;
     display: flex;
 
     @media (max-width: 375px) {
@@ -20,10 +19,17 @@ const StyledContainer = styled.div`
     }
 `;
 
+const StyledHeader = styled.div`
+    height: 10vh;
+    background: var(--navy);
+    z-index: 2;
+`;
+
 const StyledNav = styled.nav`
     display: flex;
     flex: 1 1;
     margin: 0;
+    overflow: none;
 `;
 
 const StyledContent = styled.main`
@@ -31,12 +37,22 @@ const StyledContent = styled.main`
     justify-content: center;
     flex: 5 5;
     padding: 0;
+    overflow: scroll;
+
+    -ms-overflow-style: none; /* Internet Explorer 10 */
+    scrollbar-width: none; /* Firefox */
+
+    /* Hides the scrollbar from view */
+    ::-webkit-scrollbar {
+        width: 0; 
+    }
 `;
 
 const StyledSocials = styled.nav`
     display: flex;
     justify-content: flex-end;
     flex: 1 1;
+    overflow: none;
 `;
 
 const Layout = ({ children, title = "Isaac Teh", location }) => {
@@ -50,6 +66,9 @@ const Layout = ({ children, title = "Isaac Teh", location }) => {
             </Head>
 
             <StyledContainer>
+                <StyledHeader>
+
+                </StyledHeader>
                 <StyledNav>
                     <Navbar />
                 </StyledNav>

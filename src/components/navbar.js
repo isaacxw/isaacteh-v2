@@ -5,27 +5,27 @@ import styled from 'styled-components';
 const NavItems = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     margin: 1rem;
-    padding: 1.5rem;
+    padding: 1.5rem 1.5rem 0 1.5rem;
     line-height: 5rem;
 
-    &:before {
+    /* &:before {
         content: '';
         display: block;
         width: 3px;
         height: 200px;
         margin: 0 auto;
         background-color: var(--yellow);
-    }
+    } */
 
     &:after {
         content: '';
         display: block;
-        width: 3px;
-        height: 200px;
+        width: 2px;
+        height: 30%;
         margin: 0 auto;
-        background-color: var(--yellow);
+        background-color: var(--light-slate);
     }
 
     @media (max-width: 375px) {
@@ -40,10 +40,7 @@ const NavItems = styled.div`
 `;
 
 const StyledLogo = styled.a`
-    position: absolute;
-    top: 0.3rem;
-    left: 0.15rem;
-    margin: 2rem;
+    display: none;
 `;
 
 const NavItem = styled.div`
@@ -70,7 +67,7 @@ const Navbar = ({ isHome }) => {
 
                 <NavItem>
                     <Link href="/about">
-                        <a>
+                        <a alt="About">
                             <i className="fa fa-user"></i>
                         </a>
                     </Link>
