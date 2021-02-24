@@ -156,7 +156,7 @@ const About = () => {
                         </p>
 
                         <p>
-                            Outside of writing code, I am an amatuer home chef, a music junkie, and a Formula 1 enthusiast.
+                            Outside of writing code, I am an amateur home chef, a music junkie, and a Formula 1 enthusiast.
                         </p>
 
                         <p>Here are a few technologies that I've been working with:</p>

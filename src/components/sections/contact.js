@@ -96,7 +96,6 @@ const Contact = () => {
                     <p>
                         I'm currently seeking full time opportunities to better develop my skills as an
                         engineer. I'd be more than glad to discuss any opportunites. Otherwise, just say hi!
-                        I don't bite... usually.
                     </p>
 
                     <a className="email-link" href="mailto:isaactxw@gmail.com">

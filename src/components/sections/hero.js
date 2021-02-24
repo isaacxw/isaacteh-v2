@@ -76,7 +76,7 @@ const Hero = () => {
 
     const one = <h1>Hi there, my name is {' '}</h1>;
     const two = <h2>Isaac Teh.</h2>;
-    const three = <h3>I build things for the web.</h3>;
+    const three = <h3>I create things with code.</h3>;
     const four = (
         <p>
             I'm a software engineer based in Los Angeles, CA specializing in building (and occasionally 
