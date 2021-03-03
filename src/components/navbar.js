@@ -28,9 +28,8 @@ const NavItems = styled.div`
         background-color: var(--light-slate);
     }
 
-    @media (max-width: 375px) {
+    @media (max-width: 480px) {
         flex-direction: row;
-        justify-content: space-evenly;
 
         &:before,
         &:after {
@@ -62,6 +61,11 @@ const NavItem = styled.div`
     font-family: var(--font-mono);
     font-size: 1.2rem;
     color: #fff;
+
+    @media (max-width: 480px) {
+        padding: 0 0 0 40px;
+        font-size: 1.5rem;
+    }
 `;
 
 const Navbar = ({ isHome }) => {

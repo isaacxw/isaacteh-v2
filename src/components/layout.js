@@ -11,8 +11,9 @@ const StyledContainer = styled.div`
     background: var(--navy);
     border: 1rem solid white;
     display: flex;
+    overflow-x: auto;
 
-    @media (max-width: 375px) {
+    @media (max-width: 480px) {
         width: 130%;
         height: 100%;
         flex-direction: column;
@@ -24,6 +25,11 @@ const StyledNav = styled.nav`
     flex: 1 1;
     margin: 0;
     overflow: none;
+
+    @media (max-width: 480px) {
+        display: flex;
+        justify-content: flex-end;
+    }
 `;
 
 const StyledContent = styled.main`
@@ -40,6 +46,10 @@ const StyledContent = styled.main`
     ::-webkit-scrollbar {
         width: 0; 
     }
+
+    @media (max-width: 480px) {
+        margin-top: 2.5rem;
+    }
 `;
 
 const StyledSocials = styled.nav`
@@ -47,6 +57,10 @@ const StyledSocials = styled.nav`
     justify-content: flex-end;
     flex: 1 1;
     overflow: none;
+
+    @media (max-width: 480px) {
+        
+    }
 `;
 
 const Layout = ({ children, title = "Isaac Teh", location }) => {

@@ -26,11 +26,25 @@ const StyledSocialList = styled.div`
         margin: 0 auto;
         background-color: var(--light-slate);
     }
+
+    @media (max-width: 480px) {
+        flex-direction: row;
+
+        &:before,
+        &:after {
+            display: none;
+        }
+    }
 `;
 
 const StyledSocialItem = styled.div`
     font-size: 1.2rem;
     color: #fff;
+
+    @media (max-width: 480px) {
+        padding: 0 0 0 40px;
+        font-size: 1.5rem;
+    }
 `;
 
 const StyledResumeBtn = styled.div`
@@ -62,11 +76,12 @@ const StyledResumeBtn = styled.div`
         }
     }
 
-    @media (max-width: 375px) {
-        display: relative;
-        top: 15%;
-        left: 53%;
-        margin: 0 auto;
+    @media (max-width: 480px) {
+        display: none;
+        /* display: relative;
+        top: 3.3rem;
+        right: -5.5rem;
+        margin: 0 auto; */
     }
 
 `;
