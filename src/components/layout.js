@@ -9,7 +9,7 @@ const StyledContainer = styled.div`
     padding: 0;
     margin: 0;
     background: var(--navy);
-    border: 1rem solid white;
+    border: 0.5rem solid var(--white);
     display: flex;
     overflow-x: auto;
 
