@@ -43,19 +43,11 @@ const StyledLogo = styled.a`
     position: absolute;
     width: 100px;
     height: 120px;
-    top: 16px;
-    left: 16px;
-    background-color: var(--yellow);
+    top: 30px;
+    left: 17px;
     display: flex;
     align-items: flex-end;
     padding: 0;
-
-    h1 {
-        color: var(--navy);
-        font-size: 4rem;
-        margin: 0 auto;
-        margin-bottom: 0;
-    }
 `;
 
 const NavItem = styled.div`
@@ -84,18 +76,15 @@ const Navbar = ({ isHome }) => {
         <>
             <NavItems>
                 <StyledLogo>
-                    <Link href="/">
-                        <h1>it.</h1>
-                    </Link>
-                    {/* <Link href="/">
+                    <Link href="/" title='Home'>
                         <Image
-                            src="/images/logo.png"
-                            alt="logo"
+                            src="/images/portrait-art.png"
+                            alt="Logo"
                             layout="fixed"
-                            width={65}
-                            height={65}
+                            width={100}
+                            height={100}
                         />
-                    </Link> */}
+                    </Link>
                 </StyledLogo>
 
                 <NavItem>
