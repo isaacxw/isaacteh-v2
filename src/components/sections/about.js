@@ -36,6 +36,18 @@ const StyledText = styled.div`
         color: var(--yellow);
     }
 
+    .pre-intro {
+        margin: 0 0 20px 0;
+        color: var(--white);
+        font-family: var(--font-mono);
+        font-size: clamp(var(--fz-sm), 5vw, var(--fz-md));
+        font-weight: 400;
+
+        @media (max-width: 480px) {
+            margin: 0 0 20px 2px;
+        }
+    }
+
     ul.skills-list {
         display: grid;
         grid-template-columns: repeat(2, minmax(140px, 200px));
@@ -140,8 +152,9 @@ const About = () => {
             <div className="inner">
                 <StyledText>
                     <div>
-                        <p>Hello there! I'm Isaac, a software engineer based in Los Angeles, CA.</p>
-
+                        <p className="pre-intro">
+                            Oh hello again!
+                        </p>                    
                         <p>
                             I'm passionate about building things that live on the internet, whether that be websites,
                             applications, or anything in between. I strive to build quality applications that provide
