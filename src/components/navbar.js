@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import styled from 'styled-components';
+import { useEffect, useState } from 'react';
 
 const NavItems = styled.div`
     display: flex;
@@ -69,6 +70,16 @@ const NavItem = styled.div`
 `;
 
 const Navbar = ({ isHome }) => {
+    const [isClient, setIsClient] = useState(false);
+
+    useEffect(() => {
+        setIsClient(true);
+    }, []);
+
+    if (!isClient) {
+        return null;
+    }
+
     return (
         <>
             <NavItems>
@@ -88,26 +99,20 @@ const Navbar = ({ isHome }) => {
                 </StyledLogo>
 
                 <NavItem>
-                    <Link href="/about">
-                        <a alt="About">
-                            <i className="fa fa-user"></i>
-                        </a>
+                    <Link href="/about" alt="About">
+                        <i className="fa fa-user"></i>
                     </Link>
                 </NavItem>
 
                 <NavItem>
-                    <Link href="/experience">
-                        <a>
-                            <i className="fa fa-folder-open"></i>
-                        </a>
+                    <Link href="/experience" alt="Experience">
+                        <i className="fa fa-folder-open"></i>
                     </Link>
                 </NavItem>
 
                 <NavItem>
-                    <Link href="/contact">
-                        <a>
-                            <i className="fa fa-address-card"></i>
-                        </a>
+                    <Link href="/contact" alt="Contact">
+                        <i className="fa fa-address-card"></i>
                     </Link>
                 </NavItem>
             </NavItems>
