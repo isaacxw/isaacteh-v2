@@ -3,7 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 const Global = createGlobalStyle`
     :root {
         --dark-navy: #020c1b;
-        --navy: #0a192f;
+        --navy:rgb(27, 73, 141);
         --light-navy: #112240;
         --lightest-navy: #233554;
         --navy-shadow: rgba(2, 12, 27, 0.7);
@@ -31,7 +31,7 @@ const Global = createGlobalStyle`
         --nav-scroll-height: 70px;
 
         --easing: cubic-bezier(0.645, 0.045, 0.355, 1);
-        --transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+        --transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
     }
 
     html {
@@ -57,7 +57,7 @@ const Global = createGlobalStyle`
         -moz-osx-font-smoothing: grayscale;
         -webkit-font-smoothing: antialiased;
         background-color: none;
-        color: var(--slate);
+        color: var(--white);
         font-family: var(--font-sans);
         font-size: var(--fz-xl);
         line-height: 1.3;
