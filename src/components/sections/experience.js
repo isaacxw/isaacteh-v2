@@ -148,6 +148,7 @@ const StyledFeaturedProject = styled.div`
         position: relative;
         margin-left: 2rem;
         z-index: 1;
+        object-fit: cover;
         @media (max-width: 768px) {
 
             height: 100%;
@@ -173,11 +174,11 @@ const StyledProjects = styled.div`
     flex-wrap: wrap;
 
     .box {
-        width: 20rem;
-        height: 15rem;
+        width: calc(33.333% - 1rem);
+        height: auto;
         border: 2px solid var(--yellow-tint);
         border-radius: 5px;
-        margin: 0 0.5rem;
+        margin: 0.5rem;
         padding: 2rem;
         background-color: var(--navy);
 
@@ -227,29 +228,35 @@ const StyledProjects = styled.div`
 
 const Experience = () => {
     const featuredProject = {
-        "name": "Spotified",
-        "description": "Spotified is a web application that allows users to visualize their listening habits. Much like Spotify recap, just more available.",
-        "stack": ["React", "Node.js", "Express", "Spotify Web API"]
+        "name": "Showers Pass",
+        "description": "Developed a custom Shopify theme for Showers Pass, a Portland-based cycling apparel company.",
+        "stack": ["HTML", "CSS", "Liquid", "GraphQL"]
     };
 
     const projects = [
         {
-            "name": "Ask Matty",
-            "description": "Ask Matty is the official chatbot of California State University, Northridge. Developed by yours truly.",
-            "stack": ["Typescript", "React", "Dialogflow"],
+            "name": "Spotified",
+            "description": "A web application that allows users to visualize their listening habits on Spotify.",
+            "stack": ["React", "Node.js", "Express", "Spotify Web API"],
             "links": ["https://github.com/isaacxw/spotified", "https://spotified.herokuapp.com"]
+        },
+        {
+            "name": "Ask Matty",
+            "description": "AskMatty is the official chatbot of California State University, Northridge.",
+            "stack": ["Typescript", "React", "Dialogflow"],
+            "links": ["https://github.com/csun-it/askmatty", "https://csun.edu"]
         },
         {
             "name": "WalkieTalkie",
             "description": "The WalkieTalkie project is a CMS platform that caters towards personalized chatbot behavior.",
             "stack": ["Python", "React", "Typescript"],
-            "links": ["https://github.com/csun-it/walkietalkie"]
+            "links": ["https://github.com/csun-it/walkietalkie", 'https://csun.edu']
         },
         {
             "name": "isaacteh-v2",
-            "description": "My personal website, built with React, CSS-in-JS, Next.js, and deployed with Vercel",
+            "description": "My personal website, built with React, styled-components, Next.js, and deployed with Vercel.",
             "stack": ["React", "Next.js", "Vercel"],
-            "links": ["https://github.com/isaacxw/isaacteh-v2", "#"]
+            "links": ["https://github.com/isaacxw/isaacteh-v2", "https://isaacteh.me"]
         }
     ]
 
@@ -257,7 +264,7 @@ const Experience = () => {
         <>
             <StyledProjectSection>
                 <div className="heading">
-                    <h2 className="title">Projects</h2>
+                    <h2 className="title">Portfolio</h2>
                 </div>
                 <div className="featured">
                     <StyledFeaturedProject>
@@ -284,10 +291,10 @@ const Experience = () => {
                         </div>
 
                         <div className="project-image">
-                            <a href="https://spotified.herokuapp.com" target="_blank">
+                            <a href="https://showerspass.com" target="_blank">
                                 <Image
-                                    src="/images/spotified.png"
-                                    alt="spotified"
+                                    src="/images/sp-screenshot.png"
+                                    alt="Showers Pass"
                                     layout="fixed"
                                     width={550}
                                     height={310}
@@ -307,12 +314,11 @@ const Experience = () => {
                                         <i className="fa fa-folder"></i>
                                     </a>
                                     <div className="links">
-                                        <a href={projects[project].links} aria-label="Github Link">
-                                            <i className="fa fa-github"></i>
-                                        </a>
-                                        <a href="#" aria-label="External Link">
-                                            <i className="fa fa-globe"></i>
-                                        </a>
+                                        {projects[project].links.map((link, index) => (
+                                            <a key={index} href={link} aria-label={index === 0 ? "Github Link" : "External Link"} target="_blank">
+                                                <i className={index === 0 ? "fa fa-github" : "fa fa-globe"}></i>
+                                            </a>
+                                        ))}                            
                                     </div>
                                 </div>
                                 <h2 className="title">{projects[project].name}</h2>
