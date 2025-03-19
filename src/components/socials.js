@@ -91,26 +91,41 @@ const Social = ({ isHome }) => {
         <>
             <StyledSocialList>
                 <StyledResumeBtn>
-                    <a href="/resume.pdf" className="resumeLink">
+                    <a 
+                    href="/resume.pdf" 
+                    className="resumeLink" 
+                    target="_blank">
                         Resume
                     </a>
                 </StyledResumeBtn>
 
                 <StyledSocialItem>
-                    <a href="https://www.linkedin.com/in/isaactxw">
+                    <a 
+                    href="https://www.linkedin.com/in/isaactxw" 
+                    alt="Link to linkedin.com/in/isaactxw" 
+                    target="_blank"
+                    title="Linkedin">
                         <i className="fa fa-linkedin"></i>
                     </a>
                 </StyledSocialItem>
 
                 <StyledSocialItem>
-                    <a href="https://github.com/isaacxw">
+                    <a 
+                    href="https://github.com/isaacxw" 
+                    alt="Link to github.com/isaacxw" 
+                    target="_blank"
+                    title="Github">
                         <i className="fa fa-github"></i>
                     </a>
                 </StyledSocialItem>
 
                 <StyledSocialItem>
-                    <a href="https://twitter.com/isaac_teh">
-                        <i className="fa fa-twitter"></i>
+                    <a 
+                    href="https://www.instagram.com/isaactxw/" 
+                    alt="link to Instagram profile @isaactxw" 
+                    target="_blank"
+                    title="Instagram">
+                        <i className="fa fa-instagram"></i>
                     </a>
                 </StyledSocialItem>
             </StyledSocialList>

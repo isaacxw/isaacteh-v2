@@ -148,7 +148,6 @@ const StyledFeaturedProject = styled.div`
         position: relative;
         margin-left: 2rem;
         z-index: 1;
-        object-fit: cover;
         @media (max-width: 768px) {
 
             height: 100%;

@@ -29,6 +29,15 @@ const NavItems = styled.div`
         background-color: var(--light-slate);
     }
 
+    @media screen and (max-width: 798px) {
+        flex-direction: row;
+
+        &:before,
+        &:after {
+            display: none;
+        }
+    }
+
     @media (max-width: 480px) {
         flex-direction: row;
 
