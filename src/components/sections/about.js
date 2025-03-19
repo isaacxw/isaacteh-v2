@@ -35,6 +35,10 @@ const StyledText = styled.div`
     a {
         color: var(--yellow);
     }
+    
+    span {
+        color:rgb(254, 118, 118);
+    }
 
     .pre-intro {
         margin: 0 0 20px 0;
@@ -88,7 +92,6 @@ const StyledImage = styled.div`
         display: block;
         position: relative;
         width: 100%;
-        border-radius: 5px;
         background-color: var(--yellow);
 
         &:hover,
@@ -152,27 +155,34 @@ const About = () => {
             <div className="inner">
                 <StyledText>
                     <div>
-                        <p className="pre-intro">
+                        <p>
                             Oh hello again!
                         </p>                    
                         <p>
-                            I'm passionate about building things that live on the internet, whether that be websites,
-                            applications, or anything in between. I strive to build quality applications that provide
-                            pixel-perfect, performant experiences without sacrificing the most important aspect of all -- user experience.
+                            It's me, Isaac. I live in Portland, OR and I'm a <span>Software Developer</span> with experience
+                            in both <span>UI/UX Design</span> and <span>Digital Marketing</span>. 
                         </p>
 
                         <p>
-                            I recently graduated from{' '}
-                            <a href="https://www.csun.edu">California State University, Northridge</a> with a
-                            degree in Computer Science. During my time as an undergraduate, I worked as a Web Developer
-                            at the Central IT of my university building cool applications for users all across campus.
+                            I currently work at <a href="https://showerspass.com" alt="Showers Pass" target="_blank">Showers Pass</a>,
+                            a Pacific Northwest-based outdoor apparel company, where I develop and manage their website and internal systems. Additionally, 
+                            I help out with <a href="https://vvolt.com" alt="Vvolt" target="_blank">Vvolt E-bikes</a>,
+                            building and maintaining their e-commerce platform and infrastructure. 
+                        </p>    
+                        
+                        <p>
+                            I graduated from <a href="https://www.csun.edu">California State University, Northridge</a> with 
+                            a <span>B.S. in Computer Science</span>. During my time there, I worked at the university's Central
+                            IT department as a fullstack web developer, building cool applications for thousands of students and
+                            faculty members throughout campus. 
                         </p>
 
                         <p>
-                            Outside of writing code, I am an amateur home chef, a music junkie, and a Formula 1 enthusiast.
+                            Outside of work, I enjoy a good album, am a history nut, and love the great outdoors. I also enjoy biking, 
+                            craft beers, and spicy ramen.            
                         </p>
 
-                        <p>Here are a few technologies that I've been working with:</p>
+                        <p>Here are some of my technical proficiencies:</p>
                     </div>
 
                     <ul className="skills-list">
@@ -187,8 +197,8 @@ const About = () => {
                             alt="Isaac Teh"
                             className="img"
                             layout="fixed"
-                            width={280}
-                            height={280}
+                            width={300}
+                            height={300}
                         />
                     </div>
                 </StyledImage>
