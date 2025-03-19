@@ -2,6 +2,7 @@ import Head from 'next/head';
 import styled from 'styled-components';
 import { Global, theme } from '../styles';
 import { Navbar, Social } from './index';
+import { useState, useEffect } from 'react';
 
 const StyledContainer = styled.div`
     width: 100vw;
@@ -12,6 +13,10 @@ const StyledContainer = styled.div`
     border: 0.5rem solid var(--white);
     display: flex;
     overflow-x: auto;
+
+    @media screen and (max-width: 798px) {
+        flex-direction: column;
+    }
 
     @media (max-width: 480px) {
         width: 130%;
@@ -25,6 +30,11 @@ const StyledNav = styled.nav`
     flex: 1 1;
     margin: 0;
     overflow: none;
+
+    @media screen and (max-width: 798px) {
+        align-items: center;
+        justify-content: center;
+    }
 
     @media (max-width: 480px) {
         display: flex;
@@ -64,6 +74,14 @@ const StyledSocials = styled.nav`
 `;
 
 const Layout = ({ children, title = "Isaac Teh", location }) => {
+    const [isMobile, setIsMobile] = useState(0);
+
+    useEffect(() => {
+        window.addEventListener('resize', () => {
+            setIsMobile(window.innerWidth < 798);
+        });
+    }
+    , []);
 
     return (
         <>
@@ -73,20 +91,36 @@ const Layout = ({ children, title = "Isaac Teh", location }) => {
                 <meta name="viewport" content="initial-scale=1.0" width="device-width" />
             </Head>
 
-            <StyledContainer>
+                {isMobile ? (
+                    <StyledContainer>
+                        <StyledContent>
+                            {children}
+                        </StyledContent>
+                        
+                        <StyledNav>
+                            <Navbar />
+                        </StyledNav>
 
-                <StyledNav>
-                    <Navbar />
-                </StyledNav>
+                        <StyledSocials>
+                            <Social />
+                        </StyledSocials>
+                    </StyledContainer>
+                ) : (
+                <StyledContainer>
+                    <StyledNav>
+                        <Navbar />
+                    </StyledNav>
 
-                <StyledContent>
-                    {children}
-                </StyledContent>
+                    <StyledContent>
+                        {children}
+                    </StyledContent>
 
-                <StyledSocials>
-                    <Social />
-                </StyledSocials>
-            </StyledContainer>
+                    <StyledSocials>
+                        <Social />
+                    </StyledSocials>
+                </StyledContainer>
+                )
+            }
         </>
     );
 }
